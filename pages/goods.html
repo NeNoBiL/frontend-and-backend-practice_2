@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-code-slash"></i> Темираев М.А.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practices.html">Практики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="goods.html">Товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок -->
+    <section class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="display-5">Наши товары</h1>
+            <p class="lead">Качественные услуги и продукты</p>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Фильтры -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active">Все</button>
+                        <button type="button" class="btn btn-outline-primary">Услуги</button>
+                        <button type="button" class="btn btn-outline-primary">Продукты</button>
+                        <button type="button" class="btn btn-outline-primary">Поддержка</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Товар 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods1.jpg в папку images -->
+                        <img src="../images/goods1.jpg" class="card-img-top product-img" alt="Веб-разработка">
+                        <div class="card-body">
+                            <h5 class="card-title">Веб-разработка</h5>
+                            <p class="card-text">Создание современных веб-сайтов и приложений с использованием последних технологий.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML/CSS</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-info">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">15 000 ₽</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods2.jpg в папку images -->
+                        <img src="../images/goods2.jpg" class="card-img-top product-img" alt="Дизайн интерфейса">
+                        <div class="card-body">
+                            <h5 class="card-title">Дизайн интерфейса</h5>
+                            <p class="card-text">Проектирование удобных и современных пользовательских интерфейсов.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">Figma</span>
+                                <span class="badge bg-info">UI/UX</span>
+                                <span class="badge bg-success">Прототипы</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">12 000 ₽</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods3.jpg в папку images -->
+                        <img src="../images/goods3.jpg" class="card-img-top product-img" alt="Техническая поддержка">
+                        <div class="card-body">
+                            <h5 class="card-title">Техническая поддержка</h5>
+                            <p class="card-text">Обслуживание и поддержка ваших веб-проектов, решение технических вопросов.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">Поддержка</span>
+                                <span class="badge bg-info">Консультации</span>
+                                <span class="badge bg-primary">Технологии</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">8 000 ₽/мес</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods4.jpg в папку images -->
+                        <img src="../images/goods4.jpg" class="card-img-top product-img" alt="React разработка">
+                        <div class="card-body">
+                            <h5 class="card-title">React разработка</h5>
+                            <p class="card-text">Создание SPA-приложений с использованием React и современных инструментов.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">React</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-info">API</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">20 000 ₽</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods5.jpg в папку images -->
+                        <img src="../images/goods5.jpg" class="card-img-top product-img" alt="Мобильное приложение">
+                        <div class="card-body">
+                            <h5 class="card-title">Мобильное приложение</h5>
+                            <p class="card-text">Разработка кроссплатформенных мобильных приложений с современным UI.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">React Native</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-primary">Mobile</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">25 000 ₽</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <!-- Добавьте файл goods6.jpg в папку images -->
+                        <img src="../images/goods6.jpg" class="card-img-top product-img" alt="SEO оптимизация">
+                        <div class="card-body">
+                            <h5 class="card-title">SEO оптимизация</h5>
+                            <p class="card-text">Оптимизация сайтов для поисковых систем, повышение видимости в поиске.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-danger">SEO</span>
+                                <span class="badge bg-primary">Аналитика</span>
+                                <span class="badge bg-success">Оптимизация</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">10 000 ₽</span>
+                                <button class="btn btn-primary">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Темираев Максим Асланович</h5>
+                    <p>Студент группы ЭФБО-05-24</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: temiraev@edu.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Темираев М.А. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

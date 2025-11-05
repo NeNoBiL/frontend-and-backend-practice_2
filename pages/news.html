@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .news-card {
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-code-slash"></i> Темираев М.А.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practices.html">Практики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="goods.html">Товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок -->
+    <section class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="display-5">Новости</h1>
+            <p class="lead">Последние обновления и события</p>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Новость 1 -->
+                <div class="col-lg-6">
+                    <div class="card news-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Запуск нового портфолио</h5>
+                                <span class="badge bg-primary">Новый</span>
+                            </div>
+                            <p class="text-muted small">
+                                <i class="bi bi-calendar me-1"></i>15 января 2025
+                                <i class="bi bi-person ms-3 me-1"></i>Темираев М.А.
+                            </p>
+                            <p class="card-text">Рад сообщить о запуске моего нового веб-сайта портфолио! Этот проект разработан с использованием современных технологий...</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-info">Bootstrap</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Новость 2 -->
+                <div class="col-lg-6">
+                    <div class="card news-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Изучение React.js</h5>
+                                <span class="badge bg-success">Обучение</span>
+                            </div>
+                            <p class="text-muted small">
+                                <i class="bi bi-calendar me-1"></i>10 января 2025
+                                <i class="bi bi-person ms-3 me-1"></i>Темираев М.А.
+                            </p>
+                            <p class="card-text">Начал углубленное изучение фреймворка React.js. В планах - создание SPA-приложения с использованием современных подходов...</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">React</span>
+                                <span class="badge bg-success">JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Новость 3 -->
+                <div class="col-lg-6">
+                    <div class="card news-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Успешная сдача практических работ</h5>
+                                <span class="badge bg-info">Учеба</span>
+                            </div>
+                            <p class="text-muted small">
+                                <i class="bi bi-calendar me-1"></i>5 января 2025
+                                <i class="bi bi-person ms-3 me-1"></i>Темираев М.А.
+                            </p>
+                            <p class="card-text">Завершил выполнение серии практических работ по дисциплине "Фронтенд и бэкенд разработка". Все работы сданы в срок...</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML/CSS</span>
+                                <span class="badge bg-info">Bootstrap</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Новость 4 -->
+                <div class="col-lg-6">
+                    <div class="card news-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Новые проекты в разработке</h5>
+                                <span class="badge bg-warning">Проекты</span>
+                            </div>
+                            <p class="text-muted small">
+                                <i class="bi bi-calendar me-1"></i>1 января 2025
+                                <i class="bi bi-person ms-3 me-1"></i>Темираев М.А.
+                            </p>
+                            <p class="card-text">В настоящее время работаю над несколькими интересными проектами: интернет-магазин на React, мобильное приложение для учета задач...</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">React</span>
+                                <span class="badge bg-success">JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Темираев Максим Асланович</h5>
+                    <p>Студент группы ЭФБО-05-24</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: temiraev@edu.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Темираев М.А. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
